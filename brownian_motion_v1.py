@@ -25,9 +25,9 @@ fig = plt.figure()
 ax = plt.axes(projection='3d')
 for i in range(1, comp + 1):
     t = t + dt * i
-    x = x + np.random.normal(loc=mean, scale=stand_dev(t), size=None)
-    y = y + np.random.normal(loc=mean, scale=stand_dev(t), size=None)
-    z = z + np.random.normal(loc=mean, scale=stand_dev(t), size=None)
+    x = x + np.random.normal(loc=mean, scale=stand_dev(dt), size=None)
+    y = y + np.random.normal(loc=mean, scale=stand_dev(dt), size=None)
+    z = z + np.random.normal(loc=mean, scale=stand_dev(dt), size=None)
     t_array[i] = t
     x_array[i] = x
     y_array[i] = y
